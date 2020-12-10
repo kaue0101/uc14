@@ -1,0 +1,79 @@
+/** importação**/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,300&family=Orbitron:wght@400;500;600;700&display=swap");
+
+/**padronização**/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em; /** 16 px ou tamnho 12*/
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*** smartphone ***/
+
+/*cabeçalho*/
+header {
+  height: 80px;
+  padding: 10px; /*aplicar o mesmo espaçamento para todas direcoes */
+}
+#logo img {
+  width: 50%;
+  height: 50%;
+  background-color: darkgray;
+}
+/* Pagina em construção */
+#construct {
+  text-align: center;
+  padding: 30px 0px 30px 0px; /*top  rigth bottom lefy */
+}
+
+#construct img {
+  width: 50%;
+  height: 50%;
+}
+
+#check {
+  display: none;
+}
+label {
+  font-size: 2.5em;
+  color: rgba(47, 89, 216, 0.5);
+  position: fixed;
+  top: 20px;
+  right: 15px;
+}
+
+#construct h2 {
+  color: grey;
+}
+
+/**rodapé*/
+footer {
+  background-color: black;
+  color: rgb(214, 203, 203);
+  text-align: center;
+  padding: 30px 0px 30px 0px; /*top  rigth bottom lefy */
+}
+
+footer p {
+  color: blanchedalmond;
+  font-size: 0.875em;
+}
+/** Desktop ***/
+/* A tudo que for codificado dentro dessa midia em compotamento alterado para resulucoes de
+ tela acima de 1200px**/
+@media (min-width: 1200px) {
+  /* rodape*/
+  footer {
+    font-size: 1em;
+    padding: 40px 0px 40px 0px;
+  }
+}
