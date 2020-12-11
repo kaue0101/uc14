@@ -22,12 +22,12 @@ img {
 /*cabeçalho*/
 header {
   height: 80px;
-  padding: 10px; /*aplicar o mesmo espaçamento para todas direcoes */
 }
 #logo img {
-  width: 50%;
-  height: 50%;
-  background-color: darkgray;
+  width: 193px;
+  height: 69px;
+  /*background-color: darkgray;*/
+  padding: 10px 0px 0px 10px;
 }
 /* Pagina em construção */
 #construct {
@@ -51,6 +51,31 @@ label {
   right: 15px;
 }
 
+nav ul {
+  width: 100%;
+  background-color: #343538;
+  height: 100vh; /*100% do tamanho da tela*/
+  list-style: none; /* remover os bolatis*/
+  position: fixed;
+  top: 80px;
+  right: -100%;
+  transition: all 0.5s;
+}
+
+nav ul li {
+  padding: 20px;
+  border-bottom: 1px solid #a9a9a9;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/* quando a caicha check for selecionada muda a propriedade   */
+#check:checked ~ ul {
+  right: 0;
+}
+
 #construct h2 {
   color: grey;
 }
@@ -71,6 +96,52 @@ footer p {
 /* A tudo que for codificado dentro dessa midia em compotamento alterado para resulucoes de
  tela acima de 1200px**/
 @media (min-width: 1200px) {
+  /*cabeçalho */
+  .Layout {
+    max-width: 1140px;
+    margin: 0 auto; /*centralização do conteiner no documento*/
+    /*background-color: yellow;*/
+  }
+  header {
+    height: 100px;
+    padding-top: 30px;
+  }
+
+  #logo {
+    float: left;
+  }
+
+  #logo img {
+    width: 239px;
+    height: 86px;
+  }
+  label {
+    display: none;
+  }
+  nav {
+    float: right;
+  }
+  nav ul {
+    margin-top: 20px;
+    position: static;
+    height: auto;
+    background-color: #ffffff;
+  }
+
+  nav ul li {
+    display: inline-block;
+    border: 0;
+  }
+  nav ul li a {
+    color: #a9a9a9;
+    font-weight: 600;
+    text-transform: uppercase; /*tudp maiusculo*/
+    font-size: 0.875em;
+  }
+  nav ul li a:hover {
+    color: powderblue;
+  }
+
   /* rodape*/
   footer {
     font-size: 1em;
