@@ -9,25 +9,27 @@
   margin: 0;
 }
 body {
+  /*corpo da pagina*/
   font-family: "Open Sans", sans-serif;
+  background-color: black;
   font-size: 1em; /** 16 px ou tamnho 12*/
 }
 img {
   max-width: 100%;
   height: auto;
+  background-size: cover;
 }
 
 /*** smartphone ***/
 
 /*cabeçalho*/
 header {
-  height: 80px;
+  height: 100px;
 }
 #logo img {
-  width: 193px;
-  height: 69px;
+  width: 196px;
+  height: 82px;
   /*background-color: darkgray;*/
-  padding: 10px 0px 0px 10px;
 }
 /*banner*/
 #banner {
@@ -42,7 +44,7 @@ header {
   justify-content: center;
 }
 #banner1 {
-  color: #ffffff;
+  color: #fafafa;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 500;
@@ -92,7 +94,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
 }
 /* quando a caicha check for selecionada muda a propriedade   */
 #check:checked ~ ul {
@@ -100,23 +102,19 @@ nav ul li a {
 }
 
 #construct h2 {
-  color: grey;
+  color: rgb(0, 0, 0);
 }
 
 /**rodapé*/
 
-
-
-
 footer {
-  background-color: rgb(41, 39, 39);
-  color: rgb(231, 224, 224);
+  background-color: rgb(3, 0, 0) color rgb(0, 0, 0);
   text-align: center;
-  padding: 0px 0px 0px 0px; /*top  rigth bottom lefy */
+  /* padding: 30px 0px 3px 0px; /*top  rigth bottom lefy */
 }
 
 footer p {
-  color: blanchedalmond;
+  color: rgb(252, 252, 252);
   font-size: 0.875em;
 }
 /** Desktop ***/
@@ -124,16 +122,14 @@ footer p {
 /* A tudo que for codificado dentro dessa midia em compotamento alterado para resulucoes de
  tela acima de 1200px**/
 @media (min-width: 1200px) {
-
-
   /*cabeçalho */
   .Layout {
-    max-width: 1140px;
+    max-width: 1200px;
     margin: 0 auto; /*centralização do conteiner no documento*/
-    /*background-color: yellow;*/
+    background-color: yellow;
+    background-color: black;
   }
   header {
-    height: 100px;
     padding-top: 30px;
   }
 
@@ -155,7 +151,7 @@ footer p {
     margin-top: 20px;
     position: static;
     height: auto;
-    background-color: #ffffff;
+    background-color: #020100;
   }
 
   nav ul li {
@@ -163,7 +159,7 @@ footer p {
     border: 0;
   }
   nav ul li a {
-    color: #a9a9a9;
+    color: #ddbf14;
     font-weight: 600;
     text-transform: uppercase; /*tudp maiusculo*/
     font-size: 0.875em;
@@ -177,7 +173,7 @@ footer p {
     height: 50vh;
   }
   #banner h1 {
-    color: #ffffff;
+    color: #0e0d0d;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
@@ -190,16 +186,24 @@ footer p {
   footer {
     font-size: 1em;
     padding: 30px 0px 30px 0px;
+    color: blanchedalmond;
   }
 
   div ul li {
     display: inline-block;
     margin-top: 50px;
-  }
-  #timao{
-    
     text-align: center;
-    color: rgb(13, 13, 14);
   }
-
+  #timao {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(204, 169, 72);
+  }
+  #redes {
+    /*background-color: rgb(255, 255, 255);*/
+    padding: 0%;
+    text-align: center;
+    margin-top: 0px;
+    height: 30vh;
+  }
 }
